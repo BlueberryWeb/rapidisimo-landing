@@ -1,0 +1,49 @@
+.rojo{
+    background-color: #e10030;
+    border-radius: 15px;
+    color: #fff;
+}
+.rojo a{
+    margin-top: 4rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.menu{
+    max-width: 30px;
+}
+.fondo-rojo{
+    background-image: url('../img/bg-rojo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.fondo-menu{
+    background-image: url('../img/bg-black.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.fondo-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+.redes{
+    color: #fff;
+}
+#menu{
+    display: none;
+}
+.negro{
+    background-color: #000000;
+    color: #fff;
+}
+.card{
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+}
