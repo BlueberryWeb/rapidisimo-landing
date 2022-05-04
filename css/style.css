@@ -1,24 +1,69 @@
+@font-face {
+    font-family: 'Poppins ExtraBold';
+    src: url('fonts/Poppins-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Poppins Black';
+    src: url('fonts/Poppins-Black.ttf');
+}
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('fonts//Poppins-Bold.ttf');
+}
+.medium{
+    font-family: 'Poppins Medium';
+}
+.regular{
+    font-family: 'Poppins Regular';
+}
+.black{
+    font-family: 'Poppins Black';
+}
+.extrabold{
+    font-family: 'Poppins ExtraBold';
+}
+.bold{
+    font-family: 'Poppins Bold';
+}
+.texto-rojo{
+    color: #e10030;
+}
 .rojo{
     background-color: #e10030;
-    border-radius: 15px;
+    border-color: #e10030;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Poppins Black';
+}
+.rojo:hover{
+    background-color: #e10030;
+    border-color: #e10030;
     color: #fff;
 }
 .rojo a{
     margin-top: 4rem;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
 }
 .menu{
     max-width: 30px;
 }
 .fondo-rojo{
-    background-image: url('../img/bg-rojo.png');
+    background-image: url('../img/bg-rojo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    color: #fff;
 }
 .fondo-menu{
     background-image: url('../img/bg-black.png');
@@ -36,14 +81,126 @@
     color: #fff;
 }
 #menu{
-    display: none;
+    /*display: none;*/
 }
 .negro{
-    background-color: #000000;
+    background-color: #131313;
     color: #fff;
 }
 .card{
     background: transparent;
     color: #fff;
     border-color: #fff;
+}
+.fondo-repartidor{
+    background-image: url('../img/fondo-colaborador.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    width: 100%;
+    height: 80vh;
+    color: #fff;
+}
+.numero{
+    max-width: 120px;
+}
+.flecha-pasos {
+    margin-left: 40px;
+    max-width: 40px;
+}
+.tit-pasos{
+    background-color: #e10030;
+    border-radius: 10px;
+    color: #fff;
+    height: 45px;
+}
+.logo-cobertura{
+    float: right;
+    max-width: 300px;
+}
+.cobertura{
+    margin: 0;
+    padding: 0;
+}
+.formulario{
+    background-color: #e10030;
+    color: #fff;
+}
+.formulario a{
+    text-decoration: none;
+    color: #fff;
+}
+.icono-wats{
+    float: left;
+    margin-right: 15px;
+}
+.icono-tel{
+    float: left;
+    margin-right: 15px;
+    max-width: 30px;
+}
+.formulario input{
+    border-radius: 7px;
+}
+.btn-enviar{
+    background-color: #fff;
+    color: #e10030;
+    border-color: #fff;
+    width: 150px;
+    border-radius: 10px;
+}
+.btn-enviar:hover{
+    background-color: #fff;
+    color: #e10030;
+    border-color: #fff;
+}
+.footer a{
+    color: #454545;
+    text-decoration: none;
+}
+.icono-rs{
+    max-width: 30px;
+}
+.bb{
+    max-width: 250px;
+}
+.footer ul{
+    list-style: none;
+}
+.footer li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.form{
+    margin-left: 2rem;
+}
+/*BOTÓN QUE SIEMPRE ESTÁ AL LADO*/
+.btn-flotante {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    z-index: 99;
+  }
+.btn-flotante:hover {
+  transform: translateY(-7px);
+}
+/*TERMINA BOTÓN*/
+.colab-hombro{
+    max-width: 450px;
+}
+.colab-caja{
+    max-width: 434px;
+}
+.fondo-rojo h1{
+    margin-top: 5rem;
+}
+.redes-menu{
+    margin-top: 15rem;
+}
+@media(max-width:500px){
+    .form{
+        margin-left: 0;
+       padding: 30px 30px;
+    }
 }
