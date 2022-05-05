@@ -319,28 +319,28 @@
             <div class="row pt-5">
                 <div class="col-12 col-lg-2 col-sm-12 col-md-12"></div>
                 <div class="col-12 col-lg-5 col-sm-12 col-md-12 form">
-                    <form>
+                    <form method="post" action="mail.php">
                         <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
                           <label for="exampleInputEmail1" class="form-label regular">NOMBRE</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                          <input required name="nombre" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="row">
                             <div class="col-12 col-lg-6 col-md-12 col-sm-12">
                                 <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
                                     <label for="exampleInputPassword1" class="form-label regular">TELÉFONO</label>
-                                    <input type="text" class="form-control" id="exampleInputPassword1" required>
+                                    <input required name="telefono" type="text" class="form-control" id="exampleInputPassword1">
                                   </div>
                             </div>
                             <div class="col-12 col-lg-6 col-md-12 col-sm-12">
                                 <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
                                     <label for="exampleInputPassword1" class="form-label regular">EMAIL</label>
-                                    <input type="email" class="form-control" id="exampleInputPassword1" required>
+                                    <input required name="email" type="email" class="form-control" id="exampleInputPassword1">
                                   </div>
                             </div>
                         </div>
                         <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
                             <label for="exampleInputPassword1" class="form-label regular">MENSAJE</label>
-                            <textarea class="form-control" id="floatingTextarea2" style="height: 100px" required></textarea>
+                            <textarea required name="mensaje" class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
                         </div>
                         <div class="pt-4 text-end wp-animated" data-animation="fadeInDown" data-animation-delay="1s" data-animation-duration="5s">
                             <button type="submit" class="btn btn-primary btn-enviar regular">ENVIAR</button>
