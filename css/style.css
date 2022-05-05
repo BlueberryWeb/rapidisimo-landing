@@ -41,6 +41,7 @@
     border-color: #e10030;
     color: #fff;
     border-radius: 10px;
+    width: 200px;
     font-family: 'Poppins Black';
 }
 .rojo:hover{
@@ -81,7 +82,7 @@
     color: #fff;
 }
 #menu{
-    /*display: none;*/
+    display: none;
 }
 .negro{
     background-color: #131313;
@@ -129,6 +130,9 @@
 .formulario a{
     text-decoration: none;
     color: #fff;
+}
+.icono-wats-btns{
+    float: left;
 }
 .icono-wats{
     float: left;
@@ -196,11 +200,27 @@
     margin-top: 5rem;
 }
 .redes-menu{
-    margin-top: 15rem;
+    margin-top: 26rem;
+}
+/*ANIMACIÓN TÍTULOS*/
+.animacion-titulos{
+    display: inline-block;
+    animation: fadeIn;
+    animation-duration: 7s;
+}
+/*TERMINA ANIMACIÓN DE TÍTULOS*/
+.zoom{
+    transition: transform .2s;
+}
+.zoom:hover{
+    transform: scale(1.1);
 }
 @media(max-width:500px){
     .form{
         margin-left: 0;
        padding: 30px 30px;
+    }
+    .colab-hombro{
+        max-width: 400px;
     }
 }

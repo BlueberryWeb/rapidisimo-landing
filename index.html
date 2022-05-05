@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="shortcut icon" href="img/favicon-rapidisimo.png" />
+    <link rel="stylesheet" href="css/animate.css"/>
     <title>RAPIDISIMO</title>
 </head>
 <body>
@@ -20,16 +21,20 @@
                     </div>
                     <div class="col-12 col-lg-3 col-md-12 col-sm-12"></div>
                     <div class="col-12 col-lg-3 col-md-12 col-sm-12">
-                        <h3 class="h6 pt-3 extrabold">COMIENZA A MANDAR <b class="texto-rojo">TUS PAQUETES:</b></h3>
+                        <h3 class="h6 pt-3 extrabold ">COMIENZA A MANDAR <b class="texto-rojo">TUS PAQUETES:</b></h3>
                     </div>
                     <div class="col-12 col-lg-2 col-md-12 col-sm-12">
                         <button class="btn btn-primary rojo">
-                            <img src="img/whats-logo.png" alt="33 3991 9375" class="img-fluid me-4 pt-1"/>
-                            <a href="https://api.whatsapp.com/send?phone=523339919375">33 3991 9375</a>
+                            <img src="img/whats-logo.png" alt="33 3991 9375" class="img-fluid me-4 icono-wats-btns pt-1"/>
+                            <a href="https://api.whatsapp.com/send?phone=523339919375">
+                                <h6 class="pt-2">33 3991 9375</h6>
+                            </a>
                         </button>
                     </div>
-                    <div class="col-12 col-lg-1 col-md-12 col-sm-12 pt-3 ms-3">
-                        <img src="img/menu.png" alt="Menú" class="img-fluid menu"/>
+                    <div class="col-12 col-lg-1 col-md-12 col-sm-12 pt-2 ms-3">
+                        <button class="btn btn-outline " onclick="menu()">
+                            <img src="img/menu.png" alt="Menú" class="img-fluid menu"/>
+                        </button>
                     </div>
                 </div>
                 
@@ -39,11 +44,11 @@
             <div class="container">
                 <div class="row pt-5">
                     <div class="col-12 col-lg-7 col-md-12 col-sm-12 pt-5">
-                        <h1 class="pt-5 medium display-5">¡LA MANERA MÁS <br> RÁPIDA Y SENCILLA <br>
+                        <h1 class="pt-5 medium display-5 animacion-titulos">¡LA MANERA MÁS <br> RÁPIDA Y SENCILLA <br>
                         <b class="black">DE ENVIAR TUS PAQUTES <br> DENTRO DE LA ZMG!</b></h1>
-                        <h1 class="pt-2 black display-5"><b>¡LLEGAMOS EL MISMO DÍA!</b></h1>
+                        <h1 class="pt-2 black display-5 animacion-titulos"><b>¡LLEGAMOS EL MISMO DÍA!</b></h1>
                     </div>
-                    <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5 d-none d-sm-none d-md-block">
+                    <div class="col-12 col-lg-4 col-md-12 col-sm-12 pt-5 d-none d-sm-none d-md-block animacion-titulos">
                         <img src="img/colaborador-caja-en-medio.png" alt="RAPIDISIMO" class="img-fluid colab-caja"/>
                     </div>
                 </div>
@@ -55,7 +60,7 @@
     <a href="#" class="btn-flotante"><img src="img/top-button.png" alt=""></a>
     <!--MENU-->
     <header id="menu">
-        <div class="container-fluid fondo-menu">
+        <div class="container-fluid fondo-menu wp-animated" data-animation="fadeInRight" >
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-1 col-md-12 col-sm-12"></div>
@@ -69,8 +74,10 @@
                         </ul>
                     </div>
                     <div class="col-12 col-lg-5 col-md-12 col-sm-12 pt-5 redes">
-                        <div class="text-end">
-                            <img src="img/x.png" alt="Cerrar" class="img-fluid"/>
+                        <div class="text-end pt-5">
+                            <button class="btn" onclick="cerrar()">
+                                <img src="img/x.png" alt="Cerrar" class="img-fluid"/>
+                            </button>
                         </div>
                         <div class="pt-5 text-end redes-menu">
                             <a href="https://www.facebook.com/Rapid%C3%ADsimo-101140472593332/" target="_blank" rel="noopener noreferrer">
@@ -92,14 +99,14 @@
     </header>
     <!--ELIGE EL TIPO DE ENVIO QUE REQUIERAS-->
     <div class="container-fluid pt-5 negro">
-        <div class="container">
+        <div class="container wp-animated-group">
             <div class="row">
-                <h3 class="text-center bold">ELIGE EL TIPO DE ENVIO QUE REQUIERAS:</h3>
+                <h3 class="text-center bold wp-animated" data-animation="fadeInDown" data-animation-duration="2s">ELIGE EL TIPO DE ENVIO QUE REQUIERAS:</h3>
             </div>
             <div class="row pt-5 pb-5">
                 <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12">
-                    <div class="card" >
+                    <div class="card zoom wp-animated" data-animation="zoomIn" data-animation-duration="5s" >
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12 col-lg-1 col-md-12 col-sm-12"></div>
@@ -123,7 +130,7 @@
                       </div>
                 </div>
                 <div class="col-12 col-lg-4 col-md-12 col-sm-12">
-                    <div class="card" >
+                    <div class="card zoom wp-animated" data-animation="zoomIn" data-animation-delay="0.5s" data-animation-duration="5s" >
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12 col-lg-1 col-md-12 col-sm-12"></div>
@@ -152,41 +159,42 @@
     </div>
     <!--COMIENZA A MANDAR PAQUETES-->
     <div class="container-fluid fondo-repartidor">
-        <div class="container pt-5">
-            <div class="row d-flex justify-content-end pt-5">
-                <h1 class="text-end pt-5 regular">¡COMIENZA A MANDAR <br>
+        <div class="container pt-5 wp-animated-group">
+            <div class="row d-flex justify-content-end pt-5 ">
+                <h1 class="text-end pt-5 regular wp-animated" data-animation="fadeInDown" data-animation-duration="2s">¡COMIENZA A MANDAR <br>
                 <b class="black">TUS PAQUETES!</b></h1>
-                <div class="text-end">
+                <div class="text-end wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="2s">
                     <button class="btn btn-primary rojo">
                         <img src="img/whats-logo.png" alt="33 3991 9375" class="img-fluid me-4 pt-1"/>
                         <a href="https://api.whatsapp.com/send?phone=523339919375">33 3991 9375</a>
                     </button>
                 </div>
-                <div class="text-end pt-3">
+                <div class="text-end pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="2s">
                     <button class="btn btn-primary rojo">
                         <img src="img/whats-logo.png" alt="33 3991 9375" class="img-fluid me-4 pt-1"/>
-                        <a href="https://api.whatsapp.com/send?phone=523339919375">33 3991 9375</a>
+                        <a href="https://api.whatsapp.com/send?phone=523339919375">
+                            33 3991 9375</a>
                     </button>
                 </div>
             </div>
         </div>
     </div>
     <!--CÓMO FUNCIONA-->
-    <div class="container pt-5" id="como-funciona">
-        <div class="row">
+    <div class="container pt-5 wp-animated-group" id="como-funciona">
+        <div class="row wp-animated" data-animation="fadeInDown" data-animation-duration="5s">
             <h2 class="text-center black">¿CÓMO FUNCIONA?</h2>
         </div>
         <div class="row pt-5">
             <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
             <div class="col-12 col-lg-2 col-md-12 col-sm-12">
-                <div class="">
+                <div class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
                     <img src="img/num-01.png" alt="RAPIDISIMO" class="img-fluid numero"/>
                 </div>
-                <div class="flecha-pasos pt-3">
+                <div class="flecha-pasos pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
                     <img src="img/flecha.png" alt="RAPIDISIMO" class="img-fluid"/>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
                 <h1 class="tit-pasos text-center h4 pt-2 extrabold">LLÁMANOS O ENVÍANOS UN WHATSAPP</h1>
                 <h6 class="regular">Comunicate con nosotros y proporciona la dirección de <br> origen y la de destino.</h6>
             </div>
@@ -195,14 +203,14 @@
         <div class="row pt-2">
             <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
             <div class="col-12 col-lg-2 col-md-12 col-sm-12">
-                <div class="">
+                <div class="wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
                     <img src="img/num-02.png" alt="RAPIDISIMO" class="img-fluid numero"/>
                 </div>
-                <div class="flecha-pasos pt-3">
+                <div class="flecha-pasos pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
                     <img src="img/flecha.png" alt="RAPIDISIMO" class="img-fluid"/>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12 wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
                 <h1 class="tit-pasos text-center h4 pt-2 extrabold">ELIGE EL TIPO DE ENVÍO Y DE ARTÍCULO</h1>
                 <h6 class="regular">Especifica qué tipo de envío deseas realizar (Express o programado), <br> así como describe el artículo a enviar.</h6>
             </div>
@@ -211,14 +219,14 @@
         <div class="row pt-2">
             <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
             <div class="col-12 col-lg-2 col-md-12 col-sm-12">
-                <div class="">
+                <div class="wp-animated" data-animation="fadeInDown" data-animation-delay="1s" data-animation-duration="5s">
                     <img src="img/num-03.png" alt="RAPIDISIMO" class="img-fluid numero"/>
                 </div>
-                <div class="flecha-pasos pt-3">
+                <div class="flecha-pasos pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="1s" data-animation-duration="5s">
                     <img src="img/flecha.png" alt="RAPIDISIMO" class="img-fluid"/>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12 wp-animated" data-animation="fadeInDown" data-animation-delay="1s" data-animation-duration="5s">
                 <h1 class="tit-pasos text-center h4 pt-2 extrabold">REALIZA EL PAGO</h1>
                 <h6 class="regular">Realiza el pago correspondiente con los datos que te <br> proporcionaremos.</h6>
             </div>
@@ -227,11 +235,11 @@
         <div class="row pt-2">
             <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
             <div class="col-12 col-lg-2 col-md-12 col-sm-12">
-                <div class="">
+                <div class="wp-animated" data-animation="fadeInDown" data-animation-delay="1.4s" data-animation-duration="5s">
                     <img src="img/num-04.png" alt="RAPIDISIMO" class="img-fluid numero"/>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12 wp-animated" data-animation="fadeInDown" data-animation-delay="1.4s" data-animation-duration="5s">
                 <h1 class="tit-pasos text-center h4 pt-2 extrabold">CONFIRMACIÓN DE PAGO</h1>
                 <h6 class="regular">Envía tu recino de pago y ¡listo! tu envío será programado en la <br> hora y fecha acordados.</h6>
             </div>
@@ -239,26 +247,26 @@
         </div>
     </div>
     <!--COMIENZA A MANDAR PAQUETES BCO.-->
-    <div class="container pt-5">
+    <div class="container pt-5 wp-animated-group">
         <div class="row">
             <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
             <div class="col-12 col-lg-5 col-md-12 col-sm-12 pt-5">
-                <h1 class="pt-5">¡COMIENZA A MANDAR <br>
+                <h1 class="pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">¡COMIENZA A MANDAR <br>
                     <b>TUS PAQUETES!</b></h1>
-                    <div class="text-sm-start pt-3">
+                    <div class="text-sm-start pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
                         <button class="btn btn-primary rojo">
                             <img src="img/whats-logo.png" alt="33 3991 9375" class="img-fluid me-4 pt-1"/>
                             <a href="https://api.whatsapp.com/send?phone=523339919375">33 3991 9375</a>
                         </button>
                     </div>
-                    <div class="text-start pt-3">
+                    <div class="text-start pt-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.8s" data-animation-duration="5s">
                         <button class="btn btn-primary rojo">
                             <img src="img/whats-logo.png" alt="33 3991 9375" class="img-fluid me-4 pt-1"/>
                             <a href="https://api.whatsapp.com/send?phone=523339919375">33 3991 9375</a>
                         </button>
                     </div>
             </div>
-            <div class="col-12 col-lg-2 col-md-12 col-sm-12">
+            <div class="col-12 col-lg-2 col-md-12 col-sm-12 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
                 <img src="img/colaborador-caja-hombro.png" alt="RAPIDISIMO" class="img-fluid colab-hombro"/>
             </div>
             <div class="col-12 col-lg-2 col-md-12 col-sm-12"></div>
@@ -266,7 +274,7 @@
     </div>
     <!--COBERTURA RAPIDISIMO-->
     <div class="container pt-5 pb-5" id="cobertura">
-        <div class="row d-flex justify-content-center pt-5">
+        <div class="row d-flex justify-content-center pt-5 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
             <div class="col-12 col-lg-3 col-md-12 col-sm-12 me-4" >
                 <h1 class="h4 pt-2 black">COBERTURA </h1>
             </div>
@@ -277,12 +285,12 @@
             
         </div>
     </div>
-    <div class="cobertura">
+    <div class="cobertura wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
         <img src="img/cobertura.png" alt="RAPIDISIMO" class="img-fluid"/>
     </div>
     <div class="container pt-3 pb-5">
         <div class="row d-flex">
-            <div class="text-end">
+            <div class="text-end wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
                 <h6 class="regular">El área delimitada en naranja no cuenta con cobertura.</h6>
             </div>
         </div>
@@ -291,56 +299,56 @@
     <div class="container-fluid formulario pb-5" id="contacto">
         <div class="container pt-5">
             <div class="row d-flex justify-content-center">
-                <h1 class="text-center regular ">¿TIENES ALGUNA DUDA? <b class="black">CONTÁCTANOS:</b></h1>
+                <h1 class="text-center regular wp-animated" data-animation="fadeInDown" data-animation-duration="5s">¿TIENES ALGUNA DUDA? <b class="black">CONTÁCTANOS:</b></h1>
             </div>
             <div class="row pt-5">
                 <div class="col-12 col-lg-2 col-sm-12 col-md-12"></div>
                 <div class="col-12 col-lg-5 col-sm-12 col-md-12 form">
                     <form>
-                        <div class="mb-3">
+                        <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
                           <label for="exampleInputEmail1" class="form-label regular">NOMBRE</label>
                           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="row">
                             <div class="col-12 col-lg-6 col-md-12 col-sm-12">
-                                <div class="mb-3">
+                                <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
                                     <label for="exampleInputPassword1" class="form-label regular">TELÉFONO</label>
                                     <input type="text" class="form-control" id="exampleInputPassword1">
                                   </div>
                             </div>
                             <div class="col-12 col-lg-6 col-md-12 col-sm-12">
-                                <div class="mb-3">
+                                <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
                                     <label for="exampleInputPassword1" class="form-label regular">EMAIL</label>
                                     <input type="email" class="form-control" id="exampleInputPassword1">
                                   </div>
                             </div>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
                             <label for="exampleInputPassword1" class="form-label regular">MENSAJE</label>
                             <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
                         </div>
-                        <div class="pt-4 text-end">
+                        <div class="pt-4 text-end wp-animated" data-animation="fadeInDown" data-animation-delay="1s" data-animation-duration="5s">
                             <button type="submit" class="btn btn-primary btn-enviar regular">ENVIAR</button>
                         </div>
                       </form>
                 </div>
                 <div class="col-12 col-lg-4 col-sm-12 col-md-12 ms-5 pt-4">
-                    <div class="mb-3">
+                    <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.2s" data-animation-duration="5s">
                         <img src="img/whats-logo.png" alt="RAPIDISIMO" class="img-fluid icono-wats"/>
                         <a href="https://api.whatsapp.com/send?phone=523339919375"><h2 class="h3 extrabold">33 3991 9375</h2></a>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.4s" data-animation-duration="5s">
                         <img src="img/whats-logo.png" alt="RAPIDISIMO" class="img-fluid icono-wats"/>
                         <a href="https://api.whatsapp.com/send?phone=523329370347"><h2 class="h3 extrabold">33 2937 0347</h2></a>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 wp-animated" data-animation="fadeInDown" data-animation-delay="0.6s" data-animation-duration="5s">
                         <img src="img/telefono.png" alt="RAPIDISIMO" class="img-fluid icono-tel"/>
                         <a href="tel:3343023706"><h2 class="h3 extrabold">33 4302 3706</h2></a>
                     </div>
-                    <div class="mb-3 d-none d-sm-none d-md-block">
-                        <a href="mailto:"><h2 class="bold">hola@rapidisimoexpress.com</h2></a>
+                    <div class="mb-3 d-none d-sm-none d-md-block wp-animated" data-animation="fadeInDown" data-animation-delay="0.8s" data-animation-duration="5s">
+                        <a href="mailto:"><h2 class="bold h3">hola@rapidisimoexpress.com</h2></a>
                     </div>
-                    <div class="mb-3 d-block d-sm-block d-md-none">
+                    <div class="mb-3 d-block d-sm-block d-md-none wp-animated" data-animation="fadeInDown" data-animation-delay="0.8s" data-animation-duration="5s">
                         <a href="mailto:"><h5 class="bold">hola@rapidisimoexpress.com</h5></a>
                     </div>
                 </div>
@@ -399,5 +407,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="lib/easy-waypoint-animate.js"></script>
+    <script src="lib/jquery.waypoints.js"></script>
 </body>
 </html>
