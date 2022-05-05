@@ -74,6 +74,10 @@
     width: 100%;
     height: 100vh;
 }
+.fondo-menu h6{
+    color: #fff;
+
+}
 .fondo-menu a{
     color: #fff;
     text-decoration: none;
@@ -222,5 +226,32 @@
     }
     .colab-hombro{
         max-width: 400px;
+    }
+    .tit-pasos{
+        height: 60px;
+    }
+}
+@media(max-width:400px){
+    .form{
+        margin-left: 0;
+       padding: 30px 30px;
+    }
+    .colab-hombro{
+        max-width: 300px;
+    }
+    .tit-pasos{
+        height: 60px;
+    }
+}
+@media(max-width:300px){
+    .form{
+        margin-left: 0;
+       padding: 30px 30px;
+    }
+    .colab-hombro{
+        max-width: 200px;
+    }
+    .tit-pasos{
+        height: 60px;
     }
 }
