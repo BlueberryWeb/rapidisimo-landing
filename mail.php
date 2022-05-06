@@ -38,6 +38,7 @@ $senderName = 'Pagina Rapidisimo';
 // is still in the sandbox, this address must be verified.
 $recipient = 'pruebas.blueberry2@gmail.com';
 $recipient = 'noreply.blueberry@gmail.com';
+$recipient = 'maxrapidisimo@gmail.com';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
 $usernameSmtp = 'noreply.blueberry@gmail.com';
