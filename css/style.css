@@ -54,6 +54,27 @@
     text-decoration: none;
     color: #fff;
 }
+.btn-mandar{
+    background-color: #e10030;
+    border-color: #e10030;
+    color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    font-family: 'Poppins Black';
+}
+.btn-mandar:hover{
+    background-color: #e10030;
+    border-color: #e10030;
+    color: #fff;
+}
+.btn-mandar a{
+    margin-top: 4rem;
+    text-decoration: none;
+    color: #fff;
+}
+.w-paq{
+    float: left;
+}
 .menu{
     max-width: 30px;
 }
