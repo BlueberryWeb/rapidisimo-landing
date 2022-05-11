@@ -40,6 +40,7 @@ $recipient = 'pruebascorreosbb@gmail.com';
 $recipient = 'noreply.blueberry@gmail.com';
 $recipient = 'maxrapidisimo@gmail.com';
 $recipient =  'fidelberry1@gmail.com';
+$recipient = 'litdmex@gmail.com';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
 $usernameSmtp = 'noreply.blueberry@gmail.com';
