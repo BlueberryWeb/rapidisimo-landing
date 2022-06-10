@@ -1,70 +1,30 @@
 
 <?php
-/**
- * Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
- *
- * This file is licensed under the Apache License, Version 2.0 (the "License").
- * You may not use this file except in compliance with the License. A copy of
- * the License is located at
- *
- * http://aws.amazon.com/apache2.0/
- *
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the
- * specific language governing permissions and limitations under the License.
- */
-
-
 $nombre = trim($_POST['nombre']);
 $email = trim($_POST['email']);
 $telefono = trim($_POST['telefono']);
 $mensaje = trim($_POST['mensaje']);
 
-
-// Import PHPMailer classes into the global namespace.
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// If necessary, modify the path in the require statement below to refer to the
-// location of your Composer autoload.php file.
 require './vendor/autoload.php';
 
-// Replace sender@example.com with your "From" address.
-// This address must be verified with Amazon SES.
-$sender = 'noreply.blueberry@gmail.com';
-$senderName = 'Pagina Rapidisimo';
+$sender = 'noreply.rapidisimo@gmail.com';
+$senderName = 'Nuevo Contacto en rapidisimoexpress.com';
+$recipient1 = 'noreply.rapidisimo@gmail.com';
+$recipient2 = 'pruebascorreosbb@gmail.com';
+//$recipient3 = 'maxrapidisimo@gmail.com';
+$recipient4 =  'fidelberry1@gmail.com';
+$recipient5 = 'ventas01bb@gmail.com';
 
-// Replace recipient@example.com with a "To" address. If your account
-// is still in the sandbox, this address must be verified.
-$recipient = 'pruebascorreosbb@gmail.com';
-$recipient = 'noreply.blueberry@gmail.com';
-$recipient = 'maxrapidisimo@gmail.com';
-$recipient =  'fidelberry1@gmail.com';
-$recipient = 'litdmex@gmail.com';
-
-// Replace smtp_username with your Amazon SES SMTP user name.
-$usernameSmtp = 'noreply.blueberry@gmail.com';
-
-// Replace smtp_password with your Amazon SES SMTP password.
-$passwordSmtp = 'Blueberry0707';
-
-// Specify a configuration set. If you do not want to use a configuration
-// set, comment or remove the next line.
+$usernameSmtp = 'noreply.rapidisimo@gmail.com';
+$passwordSmtp = 'nilnspodsfshwkqz';
 $configurationSet = 'ConfigSet';
-
-// If you're using Amazon SES in a region other than US West (Oregon),
-// replace email-smtp.us-west-2.amazonaws.com with the Amazon SES SMTP
-// endpoint in the appropriate region.
 $host = 'smtp.gmail.com';
 $port = 587;
-
-// The subject line of the email
-$subject = 'Mensaje de rapidisimo en la web';
-
-// The plain-text body of the email
+$subject = 'Mensaje de Rapidisimo en la web';
 $bodyText =  "Correo de la web";
-
-// The HTML-formatted body of the email
 $bodyHtml = '
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -91,19 +51,16 @@ $bodyHtml = '
             <td style="padding:0px 30px 42px 20px;">
               <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
                 <tr>
-                    <center>
-                        <td style="padding:0 0 36px 0;color:#153643;">
-                            <h1 style="color: #e10030; text-align: center; font-size: 3.5rem;">NUEVO CONTACTO</h1>
-                            <h4 style="margin:0 0 12px 0;font-size: 20px; text-align: center;">Se ha capturado un nuevo lead en <b style="font-weight: 600; color: black;">RAPIDISIMO</b></h4>
-                            <ul style="color: #aba9a8; list-style: none; text-align: center;">
-                            <li style="margin-bottom: 10px;">Nombre: ' . $nombre . '</li>
-                            <li style="margin-bottom: 10px;">Correo electrónico: ' . $email . '</li>
-                            <li style="margin-bottom: 10px;">Teléfono:  ' . $telefono . '</li>
-                            <li style="margin-top: 40px;">Mensaje: ' . $mensaje . '</li>
-                            </ul>
-
-                        </td>
-                    </center>
+                  <td style="padding:0 0 36px 0;color:#153643;">
+                    <img src="https://i.postimg.cc/k4Jn15MD/Nuevo-Contacto.png" alt="NUEVO CONTACTO" style="max-width: 500px; margin-left: 50px; margin-bottom: 60px; margin-top: 20px;"/>
+                    <ul style="color: #808080;  list-style: none;">
+                      <li><h4 style="margin:0 0 12px 0;font-size: 20px;  margin-bottom: 50px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">Se ha capturado un nuevo lead:</h4></li>
+                      <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;">Nombre:</b> ' . $nombre . '</h4></li>
+                      <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;">Correo electrónico:</b> ' . $email . '</h4></li>
+                      <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;">Teléfono: </b> ' . $telefono . '</h4></li>
+                      <li style=" font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;"><h4><b style="color: #666666;">Mensaje:</b> ' . $mensaje . '</h4></li>
+                    </ul>
+                  </td>
                 </tr>
               </table>
             </td>
@@ -126,41 +83,60 @@ $bodyHtml = '
 </body>
 </html>
     
-    ';
+
+';
 
 $mail = new PHPMailer(true);
 
-try {
-  // Specify the SMTP settings.
-  $mail->isSMTP();
-  $mail->setFrom($sender, $senderName);
-  $mail->Username   = $usernameSmtp;
-  $mail->From   = $usernameSmtp;
-  $mail->Password   = $passwordSmtp;
-  $mail->Host       = $host;
-  $mail->Port       = $port;
-  $mail->SMTPAuth   = true;
-  $mail->SMTPSecure = 'tls';
-  // $mail->SMTPDebug = true;
-  $mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
 
-  // Specify the message recipients.
-  $mail->addAddress($recipient);
-  // You can also add CC, BCC, and additional To recipients here.
+// Ingresa tu clave secreta.....
+define("RECAPTCHA_V3_SECRET_KEY", '6Lc3l1UgAAAAABIZfg8Zgb-dKobqAnhsET0m-lra');
+$token = $_POST['token'];
+$action = $_POST['action'];
 
-  // Specify the content of the message.
-  $mail->isHTML(true);
-  $mail->Subject    = $subject;
-  $mail->Body       = $bodyHtml;
-  $mail->AltBody    = $bodyText;
-  $mail->Send();
-  sleep(5);
-  header("Location: {$_SERVER['HTTP_REFERER']}");
-} catch (phpmailerException $e) {
-  echo "An error occurred. {$e->errorMessage()}", PHP_EOL; //Catch errors from PHPMailer.
-} catch (Exception $e) {
-  echo "Email not sent. {$mail->ErrorInfo}", PHP_EOL; //Catch errors from Amazon SES.
+// call curl to POST request
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array('secret' => RECAPTCHA_V3_SECRET_KEY, 'response' => $token)));
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
+$arrResponse = json_decode($response, true);
+
+// verificar la respuesta
+if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrResponse["score"] >= 0.5) {
+    // Si entra aqui, es un humano, puedes procesar el formulario
+    try {
+        $mail->isSMTP();
+        $mail->setFrom($sender, $senderName);
+        $mail->Username   = $usernameSmtp;
+        $mail->From   = $usernameSmtp;
+        $mail->Password   = $passwordSmtp;
+        $mail->Host       = $host;
+        $mail->Port       = $port;
+        $mail->SMTPAuth   = true;
+        $mail->SMTPSecure = 'tls';
+        $mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
+        $mail->addAddress($recipient1);
+        $mail->addAddress($recipient2);
+        //$mail->addAddress($recipient3);
+        $mail->addAddress($recipient4);
+        $mail->addAddress($recipient5);
+        $mail->isHTML(true);
+        $mail->Subject    = $subject;
+        $mail->Body       = $bodyHtml;
+        $mail->AltBody    = $bodyText;
+        $mail->Send();
+        sleep(4);
+        header("Location: {$_SERVER['HTTP_REFERER']}");
+    } catch (phpmailerException $e) {
+        echo "An error occurred. {$e->errorMessage()}", PHP_EOL; //Catch errors from PHPMailer.
+    } catch (Exception $e) {
+        echo "Email not sent. {$mail->ErrorInfo}", PHP_EOL; //Catch errors from Amazon SES.
+    }
+} else {
+    // Si entra aqui, es un robot....
+    echo "Lo siento, parece que eres un Robot";
 }
-
 ?>
-

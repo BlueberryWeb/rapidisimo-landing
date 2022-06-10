@@ -6,6 +6,18 @@ function cerrar(){
     document.getElementById('header').style.display = 'block';
     document.getElementById('menu').style.display = 'none';
 }
+/* RECAPTCHA */
+$('#form').submit(function (event) {
+    event.preventDefault();
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6Lc3l1UgAAAAACgJ9_phD9jcbSCiwWSwNO8yzghi', { action: 'registro' }).then(function (token) {
+            $('#form').prepend('<input type="hidden" name="token" value="' + token + '">');
+            $('#form').prepend('<input type="hidden" name="action" value="registro">');
+            $('#form').unbind('submit').submit();
+        });
+    });
+});
+
 $(document).ready(function() {
     ScrollToInit();
     ActiveSectionNavigation();

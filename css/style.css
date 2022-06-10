@@ -18,6 +18,9 @@
     font-family: 'Poppins Bold';
     src: url('fonts//Poppins-Bold.ttf');
 }
+.grecaptcha-badge {
+    visibility: hidden;
+}  
 .medium{
     font-family: 'Poppins Medium';
 }
