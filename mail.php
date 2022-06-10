@@ -14,7 +14,7 @@ $sender = 'noreply.rapidisimo@gmail.com';
 $senderName = 'Nuevo Contacto en rapidisimoexpress.com';
 $recipient1 = 'noreply.rapidisimo@gmail.com';
 $recipient2 = 'pruebascorreosbb@gmail.com';
-//$recipient3 = 'maxrapidisimo@gmail.com';
+$recipient3 = 'maxrapidisimo@gmail.com';
 $recipient4 =  'fidelberry1@gmail.com';
 $recipient5 = 'ventas01bb@gmail.com';
 
@@ -120,7 +120,7 @@ if ($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrR
         $mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
         $mail->addAddress($recipient1);
         $mail->addAddress($recipient2);
-        //$mail->addAddress($recipient3);
+        $mail->addAddress($recipient3);
         $mail->addAddress($recipient4);
         $mail->addAddress($recipient5);
         $mail->isHTML(true);
